@@ -97,7 +97,7 @@ the breakpoint for this is currently set at max-width: 440px (subject to change)
 
 #### Medium Breakpoint:
 use this through props as: mddis
-the breakpoint for this is currently set at min-width: 441px and max-width: 1200px (subject to change)
+the breakpoint for this is currently set at min-width: 441px and max-width: 760px (subject to change)
 
 
 ### Layout Specific
@@ -111,17 +111,23 @@ the breakpoint for this is currently set at min-width: 441px and max-width: 1200
 <Container1
     display = 'flex'
     direction = 'row'
+    borderLeft
+    borderRight
+    borderTop
+    borderBottom
+    border
     alignBlock1 = 'center'
     block1 = '1'
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
-    textColor = 'yellow'
-    background = 'white'
+    block1smdis = 'flex'
+    block1mddis = 'flex'
+    background
     padding = '0'
     margin = '0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir = 'column'
+    mdflexDir = 'column'
     >
 ```
 This accepts one child and renders it
@@ -137,22 +143,28 @@ This accepts one child and renders it
 <Container2
     display = 'flex'
     direction = 'row'
+    borderLeft
+    borderRight
+    borderTop
+    borderBottom
+    border
     alignBlock1 = 'center'
     block1 = '1'
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 ='center'
     block2 ='1'
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
-    textColor = 'black'
-    background = 'white'
+    block2smdis = 'flex'
+    block2mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir = 'column'
+    mdflexDir = 'column'
     >
 ```
 This accepts two children and renders them
@@ -170,27 +182,33 @@ This accepts two children and renders them
 <Container3
     display = 'flex'
     direction = 'row'
+    borderLeft
+    borderRight
+    borderTop
+    borderBottom
+    border
     alignBlock1 = 'center'
     block1 = '1'
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
+    block2smdis = 'flex'
+    block2mddis = 'flex'
     alignBlock3 = 'center'
     block3 ='1'
     justifyBlock3 = 'center'
-    block3smdis
-    block3mddis
-    textColor = 'black'
-    background = 'white'
+    block3smdis = 'flex'
+    block3mddis = 'flex'
+    background
     padding = '0'
     margin ='10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir = 'column'
+    mdflexDir = 'column'
     >
 ```
 This accepts three children and renders them
@@ -210,32 +228,38 @@ This accepts three children and renders them
 <Container4
     display = 'flex'
     direction = 'row'
+    borderLeft
+    borderRight
+    borderTop
+    borderBottom
+    border
     alignBlock1 = 'center'
     block1 = '1'
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
+    block2smdis = 'flex'
+    block2mddis = 'flex'
     alignBlock3 = 'center'
     block3 = '1'
     justifyBlock3 = 'center'
-    block3smdis
-    block3mddis
+    block3smdis = 'flex'
+    block3mddis = 'flex'
     alignBlock4 = 'center'
     block4 = '1'
     justifyBlock4 = 'center'
-    block4smdis
-    block4mddis
-    textColor = 'black'
-    background = 'white'
+    block4smdis = 'flex'
+    block4mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir = 'column'
+    mdflexDir = 'column'
     >
 ```
 This accepts four children and renders them
@@ -257,37 +281,43 @@ This accepts four children and renders them
 <Container5
     display = 'flex'
     direction = 'row'
+    borderLeft
+    borderRight
+    borderTop
+    borderBottom
+    border
     alignBlock1 = 'center'
     block1 = '1'
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
+    block2smdis = 'flex'
+    block2mddis = 'flex'
     alignBlock3 = 'center'
     block3 = '1'
     justifyBlock3 = 'center'
-    block3smdis
-    block3mddis
+    block3smdis = 'flex'
+    block3mddis = 'flex'
     alignBlock4 = 'center'
     block4 = '1'
     justifyBlock4 = 'center'
-    block4smdis
-    block4mddis
+    block4smdis = 'flex'
+    block4mddis = 'flex'
     alignBlock5 = 'center'
     block5 = '1'
     justifyBlock5 = 'center'
-    block5smdis
-    block5mddis
-    textColor = 'black'
-    background = 'white'
+    block5smdis = 'flex'
+    block5mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir = 'column'
+    mdflexDir = 'column'
     >
 ```
 This accepts five children and renders them
@@ -314,6 +344,11 @@ This accepts five children and renders them
 <Holder1
     display = 'flex'
     direction = 'row'
+    borderLeft
+    borderRight
+    borderTop
+    borderBottom
+    border
     block1direction = 'row'
     alignBlock1 = 'center'
     block1 = '1'
@@ -323,8 +358,8 @@ This accepts five children and renders them
     block1BorderBottom
     block1Border
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     block2BorderLeft
@@ -333,14 +368,15 @@ This accepts five children and renders them
     block2BorderBottom
     block2Border
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
-    textColor = 'yellow'
-    background ='white'
+    block2smdis = 'flex'
+    block2mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir
+    mdflexDir
     >
 ```
 This accepts two children and renders them
@@ -364,8 +400,8 @@ This accepts two children and renders them
     block1BorderBottom
     block1Border
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     block2BorderLeft
@@ -374,8 +410,8 @@ This accepts two children and renders them
     block2BorderBottom
     block2Border
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
+    block2smdis = 'flex'
+    block2mddis = 'flex'
     alignBlock3 = 'center'
     block3 = '1'
     block3BorderLeft
@@ -384,14 +420,15 @@ This accepts two children and renders them
     block3BorderBottom
     block3Border
     justifyBlock3 = 'center'
-    block3smdis
-    block3mddis
-    textColor = 'yellow'
-    background ='white'
+    block3smdis = 'flex'
+    block3mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir
+    mdflexDir
     >
 ```
 This accepts three children and renders them
@@ -416,8 +453,8 @@ This accepts three children and renders them
     block1BorderBottom
     block1Border
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     block2BorderLeft
@@ -426,8 +463,8 @@ This accepts three children and renders them
     block2BorderBottom
     block2Border
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
+    block2smdis = 'flex'
+    block2mddis = 'flex'
     alignBlock3 = 'center'
     block3 = '1'
     block3BorderLeft
@@ -436,8 +473,8 @@ This accepts three children and renders them
     block3BorderBottom
     block3Border
     justifyBlock3 = 'center'
-    block3smdis
-    block3mddis
+    block3smdis = 'flex'
+    block3mddis = 'flex'
     alignBlock4 = 'center'
     block4 = '1'
     block4BorderLeft
@@ -446,14 +483,15 @@ This accepts three children and renders them
     block4BorderBottom
     block4Border
     justifyBlock4 = 'center'
-    block4smdis
-    block4mddis
-    textColor = 'yellow'
-    background ='white'
+    block4smdis = 'flex'
+    block4mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir
+    mdflexDir 
     >
 ```
 This accepts four children and renders them
@@ -479,8 +517,8 @@ This accepts four children and renders them
     block1BorderBottom
     block1Border
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     block2BorderLeft
@@ -489,8 +527,8 @@ This accepts four children and renders them
     block2BorderBottom
     block2Border
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
+    block2smdis = 'flex'
+    block2mddis = 'flex'
     alignBlock3 = 'center'
     block3 = '1'
     block3BorderLeft
@@ -499,8 +537,8 @@ This accepts four children and renders them
     block3BorderBottom
     block3Border
     justifyBlock3 = 'center'
-    block3smdis
-    block3mddis
+    block3smdis = 'flex'
+    block3mddis = 'flex'
     alignBlock4 = 'center'
     block4 = '1'
     block4BorderLeft
@@ -509,8 +547,8 @@ This accepts four children and renders them
     block4BorderBottom
     block4Border
     justifyBlock4 = 'center'
-    block4smdis
-    block4mddis
+    block4smdis = 'flex'
+    block4mddis = 'flex'
     alignBlock5 = 'center'
     block5 = '1'
     block5BorderLeft
@@ -519,14 +557,15 @@ This accepts four children and renders them
     block5BorderBottom
     block5Border
     justifyBlock5 = 'center'
-    block5smdis
-    block5mddis
-    textColor = 'yellow'
-    background ='white'
+    block5smdis = 'flex'
+    block5mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir
+    mdflexDir
     >
 ```
 This accepts five children and renders them
@@ -553,8 +592,8 @@ This accepts five children and renders them
     block1BorderBottom
     block1Border
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     block2BorderLeft
@@ -563,14 +602,15 @@ This accepts five children and renders them
     block2BorderBottom
     block2Border
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
-    textColor = 'yellow'
-    background ='white'
+    block2smdis = 'flex'
+    block2mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir = 'column'
+    mdflexDir = 'column'
     >
 ```
 This accepts two children and renders them
@@ -594,8 +634,8 @@ This accepts two children and renders them
     block1BorderBottom
     block1Border
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     block2BorderLeft
@@ -604,8 +644,8 @@ This accepts two children and renders them
     block2BorderBottom
     block2Border
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
+    block2smdis = 'flex'
+    block2mddis = 'flex'
     alignBlock3 = 'center'
     block3 = '1'
     block3BorderLeft
@@ -614,14 +654,15 @@ This accepts two children and renders them
     block3BorderBottom
     block3Border
     justifyBlock3 = 'center'
-    block3smdis
-    block3mddis
-    textColor = 'yellow'
-    background ='white'
+    block3smdis = 'flex'
+    block3mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir = 'column'
+    mdflexDir = 'column'
     >
 ```
 This accepts three children and renders them
@@ -646,8 +687,8 @@ This accepts three children and renders them
     block1BorderBottom
     block1Border
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     block2BorderLeft
@@ -656,8 +697,8 @@ This accepts three children and renders them
     block2BorderBottom
     block2Border
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
+    block2smdis = 'flex'
+    block2mddis = 'flex'
     alignBlock3 = 'center'
     block3 = '1'
     block3BorderLeft
@@ -666,8 +707,8 @@ This accepts three children and renders them
     block3BorderBottom
     block3Border
     justifyBlock3 = 'center'
-    block3smdis
-    block3mddis
+    block3smdis = 'flex'
+    block3mddis = 'flex'
     alignBlock4 = 'center'
     block4 = '1'
     block4BorderLeft
@@ -676,14 +717,15 @@ This accepts three children and renders them
     block4BorderBottom
     block4Border
     justifyBlock4 = 'center'
-    block4smdis
-    block4mddis
-    textColor = 'yellow'
-    background ='white'
+    block4smdis = 'flex'
+    block4mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir = 'column'
+    mdflexDir = 'column'
     >
 ```
 This accepts four children and renders them
@@ -709,8 +751,8 @@ This accepts four children and renders them
     block1BorderBottom
     block1Border
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     block2BorderLeft
@@ -719,8 +761,8 @@ This accepts four children and renders them
     block2BorderBottom
     block2Border
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
+    block2smdis = 'flex'
+    block2mddis = 'flex'
     alignBlock3 = 'center'
     block3 = '1'
     block3BorderLeft
@@ -729,8 +771,8 @@ This accepts four children and renders them
     block3BorderBottom
     block3Border
     justifyBlock3 = 'center'
-    block3smdis
-    block3mddis
+    block3smdis = 'flex'
+    block3mddis = 'flex'
     alignBlock4 = 'center'
     block4 = '1'
     block4BorderLeft
@@ -739,8 +781,8 @@ This accepts four children and renders them
     block4BorderBottom
     block4Border
     justifyBlock4 = 'center'
-    block4smdis
-    block4mddis
+    block4smdis = 'flex'
+    block4mddis = 'flex'
     alignBlock5 = 'center'
     block5 = '1'
     block5BorderLeft
@@ -749,14 +791,15 @@ This accepts four children and renders them
     block5BorderBottom
     block5Border
     justifyBlock5 = 'center'
-    block5smdis
-    block5mddis
-    textColor = 'yellow'
-    background ='white'
+    block5smdis = 'flex'
+    block5mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir = 'column'
+    mdflexDir = 'column'
     >
 ```
 This accepts five children and renders them
@@ -783,8 +826,8 @@ This accepts five children and renders them
     block1BorderBottom
     block1Border
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     block2BorderLeft
@@ -793,8 +836,8 @@ This accepts five children and renders them
     block2BorderBottom
     block2Border
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
+    block2smdis = 'flex'
+    block2mddis = 'flex'
     alignBlock3 = 'center'
     block3 = '1'
     block3BorderLeft
@@ -803,8 +846,8 @@ This accepts five children and renders them
     block3BorderBottom
     block3Border
     justifyBlock3 = 'center'
-    block3smdis
-    block3mddis
+    block3smdis = 'flex'
+    block3mddis = 'flex'
     alignBlock4 = 'center'
     block4 = '1'
     block4BorderLeft
@@ -813,8 +856,8 @@ This accepts five children and renders them
     block4BorderBottom
     block4Border
     justifyBlock4 = 'center'
-    block4smdis
-    block4mddis
+    block4smdis = 'flex'
+    block4mddis = 'flex'
     alignBlock5 = 'center'
     block5 = '1'
     block5BorderLeft
@@ -823,8 +866,8 @@ This accepts five children and renders them
     block5BorderBottom
     block5Border
     justifyBlock5 = 'center'
-    block5smdis
-    block5mddis
+    block5smdis = 'flex'
+    block5mddis = 'flex'
     alignBlock6 = 'center'
     block6 = '1'
     block6BorderLeft
@@ -833,14 +876,15 @@ This accepts five children and renders them
     block6BorderBottom
     block6Border
     justifyBlock6 = 'center'
-    block6smdis
-    block6mddis
-    textColor = 'yellow'
-    background ='white'
+    block6smdis = 'flex'
+    block6mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir = 'column'
+    mdflexDir = 'column'
     >
 ```
 This accepts six children and renders them
@@ -868,8 +912,8 @@ This accepts six children and renders them
     block1BorderBottom
     block1Border
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     block2BorderLeft
@@ -878,8 +922,8 @@ This accepts six children and renders them
     block2BorderBottom
     block2Border
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
+    block2smdis = 'flex'
+    block2mddis = 'flex'
     alignBlock3 = 'center'
     block3 = '1'
     block3BorderLeft
@@ -888,8 +932,8 @@ This accepts six children and renders them
     block3BorderBottom
     block3Border
     justifyBlock3 = 'center'
-    block3smdis
-    block3mddis
+    block3smdis = 'flex'
+    block3mddis = 'flex'
     alignBlock4 = 'center'
     block4 = '1'
     block4BorderLeft
@@ -898,8 +942,8 @@ This accepts six children and renders them
     block4BorderBottom
     block4Border
     justifyBlock4 = 'center'
-    block4smdis
-    block4mddis
+    block4smdis = 'flex'
+    block4mddis = 'flex'
     alignBlock5 = 'center'
     block5 = '1'
     block5BorderLeft
@@ -908,8 +952,8 @@ This accepts six children and renders them
     block5BorderBottom
     block5Border
     justifyBlock5 = 'center'
-    block5smdis
-    block5mddis
+    block5smdis = 'flex'
+    block5mddis = 'flex'
     alignBlock6 = 'center'
     block6 = '1'
     block6BorderLeft
@@ -918,8 +962,8 @@ This accepts six children and renders them
     block6BorderBottom
     block6Border
     justifyBlock6 = 'center'
-    block6smdis
-    block6mddis
+    block6smdis = 'flex'
+    block6mddis = 'flex'
     alignBlock7 = 'center'
     block7 = '1'
     block7BorderLeft
@@ -928,14 +972,15 @@ This accepts six children and renders them
     block7BorderBottom
     block7Border
     justifyBlock7 = 'center'
-    block7smdis
-    block7mddis
-    textColor = 'yellow'
-    background ='white'
+    block7smdis = 'flex'
+    block7mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir = 'column'
+    mdflexDir = 'column'
     >
 ```
 This accepts seven children and renders them
@@ -964,8 +1009,8 @@ This accepts seven children and renders them
     block1BorderBottom
     block1Border
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     block2BorderLeft
@@ -974,8 +1019,8 @@ This accepts seven children and renders them
     block2BorderBottom
     block2Border
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
+    block2smdis = 'flex'
+    block2mddis = 'flex'
     alignBlock3 = 'center'
     block3 = '1'
     block3BorderLeft
@@ -984,8 +1029,8 @@ This accepts seven children and renders them
     block3BorderBottom
     block3Border
     justifyBlock3 = 'center'
-    block3smdis
-    block3mddis
+    block3smdis = 'flex'
+    block3mddis = 'flex'
     alignBlock4 = 'center'
     block4 = '1'
     block4BorderLeft
@@ -994,8 +1039,8 @@ This accepts seven children and renders them
     block4BorderBottom
     block4Border
     justifyBlock4 = 'center'
-    block4smdis
-    block4mddis
+    block4smdis = 'flex'
+    block4mddis = 'flex'
     alignBlock5 = 'center'
     block5 = '1'
     block5BorderLeft
@@ -1004,8 +1049,8 @@ This accepts seven children and renders them
     block5BorderBottom
     block5Border
     justifyBlock5 = 'center'
-    block5smdis
-    block5mddis
+    block5smdis = 'flex'
+    block5mddis = 'flex'
     alignBlock6 = 'center'
     block6 = '1'
     block6BorderLeft
@@ -1014,8 +1059,8 @@ This accepts seven children and renders them
     block6BorderBottom
     block6Border
     justifyBlock6 = 'center'
-    block6smdis
-    block6mddis
+    block6smdis = 'flex'
+    block6mddis = 'flex'
     alignBlock7 = 'center'
     block7 = '1'
     block7BorderLeft
@@ -1024,8 +1069,8 @@ This accepts seven children and renders them
     block7BorderBottom
     block7Border
     justifyBlock7 = 'center'
-    block7smdis
-    block7mddis
+    block7smdis = 'flex'
+    block7mddis = 'flex'
     alignBlock8 = 'center'
     block8 = '1'
     block8BorderLeft
@@ -1034,14 +1079,15 @@ This accepts seven children and renders them
     block8BorderBottom
     block8Border
     justifyBlock8 = 'center'
-    block8smdis
-    block8mddis
-    textColor = 'yellow'
-    background ='white'
+    block8smdis = 'flex'
+    block8mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir = 'column'
+    mdflexDir = 'column'
     >
 ```
 This accepts eight children and renders them
@@ -1071,8 +1117,8 @@ This accepts eight children and renders them
     block1BorderBottom
     block1Border
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     block2BorderLeft
@@ -1081,8 +1127,8 @@ This accepts eight children and renders them
     block2BorderBottom
     block2Border
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
+    block2smdis = 'flex'
+    block2mddis = 'flex'
     alignBlock3 = 'center'
     block3 = '1'
     block3BorderLeft
@@ -1091,8 +1137,8 @@ This accepts eight children and renders them
     block3BorderBottom
     block3Border
     justifyBlock3 = 'center'
-    block3smdis
-    block3mddis
+    block3smdis = 'flex'
+    block3mddis = 'flex'
     alignBlock4 = 'center'
     block4 = '1'
     block4BorderLeft
@@ -1101,8 +1147,8 @@ This accepts eight children and renders them
     block4BorderBottom
     block4Border
     justifyBlock4 = 'center'
-    block4smdis
-    block4mddis
+    block4smdis = 'flex'
+    block4mddis = 'flex'
     alignBlock5 = 'center'
     block5 = '1'
     block5BorderLeft
@@ -1111,8 +1157,8 @@ This accepts eight children and renders them
     block5BorderBottom
     block5Border
     justifyBlock5 = 'center'
-    block5smdis
-    block5mddis
+    block5smdis = 'flex'
+    block5mddis = 'flex'
     alignBlock6 = 'center'
     block6 = '1'
     block6BorderLeft
@@ -1121,8 +1167,8 @@ This accepts eight children and renders them
     block6BorderBottom
     block6Border
     justifyBlock6 = 'center'
-    block6smdis
-    block6mddis
+    block6smdis = 'flex'
+    block6mddis = 'flex'
     alignBlock7 = 'center'
     block7 = '1'
     block7BorderLeft
@@ -1131,8 +1177,8 @@ This accepts eight children and renders them
     block7BorderBottom
     block7Border
     justifyBlock7 = 'center'
-    block7smdis
-    block7mddis
+    block7smdis = 'flex'
+    block7mddis = 'flex'
     alignBlock8 = 'center'
     block8 = '1'
     block8BorderLeft
@@ -1141,8 +1187,8 @@ This accepts eight children and renders them
     block8BorderBottom
     block8Border
     justifyBlock8 = 'center'
-    block8smdis
-    block8mddis
+    block8smdis = 'flex'
+    block8mddis = 'flex'
     alignBlock9 = 'center'
     block9 = '1'
     block9BorderLeft
@@ -1151,14 +1197,15 @@ This accepts eight children and renders them
     block9BorderBottom
     block9Border
     justifyBlock9 = 'center'
-    block9smdis
-    block9mddis
-    textColor = 'yellow'
-    background ='white'
+    block9smdis = 'flex'
+    block9mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+   smdis = 'flex'
+    mddis = 'flex'
+    smflexDir = 'column'
+    mdflexDir = 'column'
     >
 ```
 This accepts nine children and renders them
@@ -1189,8 +1236,8 @@ This accepts nine children and renders them
     block1BorderBottom
     block1Border
     justifyBlock1 = 'center'
-    block1smdis
-    block1mddis
+    block1smdis = 'flex'
+    block1mddis = 'flex'
     alignBlock2 = 'center'
     block2 = '1'
     block2BorderLeft
@@ -1199,8 +1246,8 @@ This accepts nine children and renders them
     block2BorderBottom
     block2Border
     justifyBlock2 = 'center'
-    block2smdis
-    block2mddis
+    block2smdis = 'flex'
+    block2mddis = 'flex'
     alignBlock3 = 'center'
     block3 = '1'
     block3BorderLeft
@@ -1209,8 +1256,8 @@ This accepts nine children and renders them
     block3BorderBottom
     block3Border
     justifyBlock3 = 'center'
-    block3smdis
-    block3mddis
+    block3smdis = 'flex'
+    block3mddis = 'flex'
     alignBlock4 = 'center'
     block4 = '1'
     block4BorderLeft
@@ -1219,8 +1266,8 @@ This accepts nine children and renders them
     block4BorderBottom
     block4Border
     justifyBlock4 = 'center'
-    block4smdis
-    block4mddis
+    block4smdis = 'flex'
+    block4mddis = 'flex'
     alignBlock5 = 'center'
     block5 = '1'
     block5BorderLeft
@@ -1229,8 +1276,8 @@ This accepts nine children and renders them
     block5BorderBottom
     block5Border
     justifyBlock5 = 'center'
-    block5smdis
-    block5mddis
+    block5smdis = 'flex'
+    block5mddis = 'flex'
     alignBlock6 = 'center'
     block6 = '1'
     block6BorderLeft
@@ -1239,8 +1286,8 @@ This accepts nine children and renders them
     block6BorderBottom
     block6Border
     justifyBlock6 = 'center'
-    block6smdis
-    block6mddis
+    block6smdis = 'flex'
+    block6mddis = 'flex'
     alignBlock7 = 'center'
     block7 = '1'
     block7BorderLeft
@@ -1249,8 +1296,8 @@ This accepts nine children and renders them
     block7BorderBottom
     block7Border
     justifyBlock7 = 'center'
-    block7smdis
-    block7mddis
+    block7smdis = 'flex'
+    block7mddis = 'flex'
     alignBlock8 = 'center'
     block8 = '1'
     block8BorderLeft
@@ -1259,8 +1306,8 @@ This accepts nine children and renders them
     block8BorderBottom
     block8Border
     justifyBlock8 = 'center'
-    block8smdis
-    block8mddis
+    block8smdis = 'flex'
+    block8mddis = 'flex'
     alignBlock9 = 'center'
     block9 = '1'
     block9BorderLeft
@@ -1269,8 +1316,8 @@ This accepts nine children and renders them
     block9BorderBottom
     block9Border
     justifyBlock9 = 'center'
-    block9smdis
-    block9mddis
+    block9smdis = 'flex'
+    block9mddis = 'flex'
     alignBlock10 = 'center'
     block10 = '1'
     block10BorderLeft
@@ -1279,14 +1326,15 @@ This accepts nine children and renders them
     block10BorderBottom
     block10Border
     justifyBlock10 = 'center'
-    block10smdis
-    block10mddis
-    textColor = 'yellow'
-    background ='white'
+    block10smdis = 'flex'
+    block10mddis = 'flex'
+    background
     padding = '0'
     margin = '10px 0'
-    smdis
-    mddis
+    smdis = 'flex'
+    mddis = 'flex'
+    smflexDir = 'column'
+    mdflexDir = 'column'
     >
 ```
 This accepts ten children and renders them
@@ -1305,6 +1353,7 @@ This accepts ten children and renders them
 </Holder13>
 ```
 
+
 ## Feature Wish List
 
 **Will be added soon** 
@@ -1316,7 +1365,7 @@ This accepts ten children and renders them
 
 ## Code of Conduct
 
-a link should go to the code of conduct
+a link should probably go to the code of conduct
 
 ## Contributing
 
@@ -1335,7 +1384,7 @@ for a more detailed list of changes, please refer to the changelog
 
 ## License
 
-This is licensed under MIT license. If used in any project, please give acknowledgments to Christoher Fox.
+This is licensed under MIT license. If used in any project, please give acknowledgments to Christopher Fox.
 
 
 ## Acknowledgments
@@ -1347,6 +1396,12 @@ This is licensed under MIT license. If used in any project, please give acknowle
 
 
 ## Changelog
+**0.2.2**
+* added overflow hidden to holders and containers
+* add border, borderleft, borderright, bordertop, and borderbottom to holders and containers
+* changed default sm & md flexdirection values and added props to adjust
+* changed md max from 1200 to 760
+
 **0.2.1**
 * fixed smdis to 440px
 * fixed mddis to 441px to 1200px
