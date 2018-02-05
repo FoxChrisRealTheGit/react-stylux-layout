@@ -17,6 +17,17 @@ npm install --save react-stylux-layout
 ```
 
 ## How To Use Stylux
+### Table of Contents
+- [What's included](#whats-included-in-the-layout-varsion-of-react-stylux-is)
+- [Step by Step](#step-by-step)
+- [Animation Notes](#animation-notes)
+- [Responsive Notes](#responsive-notes)
+- [Layout](#layout-specific)
+    - [Containers](#containers-possible-name-change-expected)
+    - [Holders](#holders)
+- [Feature Wish List](#feature-wish-list)
+- [Acknowledgments](#acknowledgments)
+- [Changelog](#changelog)
 
 ### Included in the layout version of react-stylux is:
 * Containers 1-5
@@ -84,7 +95,7 @@ Each elements will then be shown is an example of children accepted.
 
 ### Animation Notes:
 
-**the animation library is not currently built**
+**the animation library is not currently associated with this part**
 
 ### Responsive Notes:
 There are two breakpoints on the follow elements:
@@ -1392,10 +1403,14 @@ This is licensed under MIT license. If used in any project, please give acknowle
 * A Giant Thank you to [Dev Mountain](https://devmountain.com/) for teaching me to code good
 * A big thank you to Morten Rand-Hendriksen for your videos on flex box and the code that allows the className socialness to work
 * Credit to http://meyerweb.com/eric/tools/css/reset/  for use of a reset file
-* Credit to the React-Styles team (used as nestingstyles) for the code to allow for media queries through style
+* Credit to the React-Styles team (used as nestingstyles) for the code to allow for media queries through style object
+* Massive credit for the animations to Daniel Eden - animate.css - http://daneden.me/animate
 
 
 ## Changelog
+**0.2.3**
+* updated containers and holders to be consistent with current stable version of react-stylux 0.2.9
+
 **0.2.2**
 * added overflow hidden to holders and containers
 * add border, borderleft, borderright, bordertop, and borderbottom to holders and containers

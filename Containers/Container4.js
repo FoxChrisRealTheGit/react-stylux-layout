@@ -35,6 +35,11 @@ var Container4 = function (_Component) {
         _this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'column',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             alignBlock1: props.alignBlock1 || 'center',
             justifyBlock1: props.justifyBlock1 || 'center',
@@ -55,34 +60,53 @@ var Container4 = function (_Component) {
             justifyBlock4: props.justifyBlock4 || 'center',
             block4smdis: props.block4smdis || 'flex',
             block4mddis: props.block4mddis || 'flex',
-            textColor: props.textColor || 'black',
-            background: props.background || 'white',
+            background: props.background,
             padding: props.padding || '0',
             margin: props.margin || '10px 0',
             smdis: props.smDis || 'flex',
-            mddis: props.mdDis || 'flex'
+            mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column',
+            childs: []
         };
         return _this;
     }
 
     _createClass(Container4, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var CHILDS = _react2.default.Children.toArray(this.props.children);
+            return this.setState({ childs: CHILDS });
+        }
+    }, {
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps(newProps) {
+            var CHILDS = _react2.default.Children.toArray(newProps.children);
+            return this.setState({ childs: CHILDS });
+        }
+    }, {
         key: 'render',
         value: function render() {
             var containerStyle = _nestingstyles2.default.create({
                 containerstyles: {
                     display: this.state.display.display,
-                    flexDirection: this.state.direction
+                    flexDirection: this.state.direction,
+                    borderLeft: this.state.borderLeft,
+                    borderRight: this.state.borderRight,
+                    borderTop: this.state.borderTop,
+                    borderBottom: this.state.borderBottom,
+                    border: this.state.border
                 },
                 '@media (max-width: 440px)': {
                     containerstyles: {
                         display: this.state.smdis,
-                        flexDirection: 'column'
+                        flexDirection: this.state.smflexDir
                     }
                 },
-                '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                '@media screen and (min-width: 482px) and (max-width: 760px)': {
                     containerstyles: {
                         display: this.state.mddis,
-                        flexDirection: 'column'
+                        flexDirection: this.state.mdflexDir
                     }
                 }
             });
@@ -96,17 +120,16 @@ var Container4 = function (_Component) {
                     justifyContent: this.state.justifyBlock1,
                     margin: this.state.margin
                 },
-                '@media screen and (max-width: 440px)': {
+                '@media screen and (max-width: 481px)': {
                     block1styles: {
                         display: this.state.block1smdis
                     }
                 },
-                '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                '@media screen and (min-width: 482px) and (max-width: 760px)': {
                     block1styles: {
                         display: this.state.block1mddis
                     }
                 }
-
             });
             var block2style = _nestingstyles2.default.create({
                 block2styles: {
@@ -118,17 +141,16 @@ var Container4 = function (_Component) {
                     justifyContent: this.state.justifyBlock2,
                     margin: this.state.margin
                 },
-                '@media screen and (max-width: 440px)': {
+                '@media screen and (max-width: 481px)': {
                     block2styles: {
                         display: this.state.block2smdis
                     }
                 },
-                '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                '@media screen and (min-width: 482px) and (max-width: 760px)': {
                     block2styles: {
                         display: this.state.block2mddis
                     }
                 }
-
             });
             var block3style = _nestingstyles2.default.create({
                 block3styles: {
@@ -140,17 +162,16 @@ var Container4 = function (_Component) {
                     justifyContent: this.state.justifyBlock3,
                     margin: this.state.margin
                 },
-                '@media screen and (max-width: 440px)': {
+                '@media screen and (max-width: 481px)': {
                     block3styles: {
                         display: this.state.block3smdis
                     }
                 },
-                '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                '@media screen and (min-width: 482px) and (max-width: 760px)': {
                     block3styles: {
                         display: this.state.block3mddis
                     }
                 }
-
             });
             var block4style = _nestingstyles2.default.create({
                 block4styles: {
@@ -162,41 +183,39 @@ var Container4 = function (_Component) {
                     justifyContent: this.state.justifyBlock4,
                     margin: this.state.margin
                 },
-                '@media screen and (max-width: 440px)': {
+                '@media screen and (max-width: 481px)': {
                     block4styles: {
                         display: this.state.block4smdis
                     }
                 },
-                '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                '@media screen and (min-width: 482px) and (max-width: 760px)': {
                     block4styles: {
                         display: this.state.block4mddis
                     }
                 }
-
             });
-            var childs = _react2.default.Children.toArray(this.props.children);
             return _react2.default.createElement(
                 'section',
                 { style: containerStyle.containerstyles },
                 _react2.default.createElement(
                     'div',
                     { style: block1style.block1styles },
-                    childs[0] || _react2.default.createElement('div', null)
+                    this.state.childs[0] || _react2.default.createElement('div', null)
                 ),
                 _react2.default.createElement(
                     'div',
                     { style: block2style.block2styles },
-                    childs[1] || _react2.default.createElement('div', null)
+                    this.state.childs[1] || _react2.default.createElement('div', null)
                 ),
                 _react2.default.createElement(
                     'div',
                     { style: block3style.block3styles },
-                    childs[2] || _react2.default.createElement('div', null)
+                    this.state.childs[2] || _react2.default.createElement('div', null)
                 ),
                 _react2.default.createElement(
                     'div',
                     { style: block4style.block4styles },
-                    childs[3] || _react2.default.createElement('div', null)
+                    this.state.childs[3] || _react2.default.createElement('div', null)
                 )
             );
         }
